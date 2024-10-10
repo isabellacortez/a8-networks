@@ -39,3 +39,8 @@ def make_http_request(ip, port):
 # This response should look a lot like the in-class example of "curl", and start with
 # "HTTP/1.1 200 OK". Rememeber, we're making an HTTP request, so from that you should
 # be able to figure out what port to use.
+
+ip_address = socket.gethostbyname(hostname)
+port = 80
+response = make_http_request(ip_address, port)
+print(response)
